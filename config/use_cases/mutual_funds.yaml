@@ -1,0 +1,81 @@
+# Mutual Funds Use Case Configuration
+
+name: "Mutual Funds Sales Agent"
+description: "AI Sales Agent specialized in mutual fund products"
+
+# Knowledge Base Paths
+knowledge_files:
+  - "mutual_funds_faq.json"
+  - "mosaic_fund_details.txt"
+  - "leadership_team.txt"
+  - "product_portfolio.txt"
+
+# Response templates
+responses:
+  initial_greeting:
+    - "Hello! I'm your mutual funds advisor from mOSAIC Investment. How may I help you today?"
+    - "Namaste! I'm your financial assistant from mOSAIC Investment. I can help you learn about our mutual fund offerings. What would you like to know?"
+    - "Welcome to mOSAIC Investment! I'm here to assist you with information about our multi-yield series and other investment options. How may I help you?"
+  
+  return_greeting:
+    - "Welcome back! How can I assist you further with our mutual fund products?"
+    - "Hello again! What else would you like to know about mOSAIC's investment options?"
+  
+  goodbye:
+    - "Thank you for your interest in mOSAIC Investment's mutual funds. Have a great day!"
+    - "It was nice speaking with you about our investment options. Feel free to call back if you have any more questions."
+  
+  fund_performance:
+    - "About the fund performance: {answer}"
+    - "Regarding the returns you can expect: {answer}"
+  
+  product_info:
+    - "Here's information about our mutual fund: {answer}"
+    - "About our mutual fund products: {answer}"
+  
+  pricing:
+    - "Regarding the investment costs and returns: {answer}"
+    - "About the fee structure and expected returns: {answer}"
+  
+  eligibility:
+    - "Regarding eligibility for our funds: {answer}"
+    - "About the requirements to invest: {answer}"
+  
+  process:
+    - "The investment process works as follows: {answer}"
+    - "Here's how you can proceed with investing: {answer}"
+  
+  risk:
+    - "Regarding the risk factors: {answer}"
+    - "About the risk assessment of our funds: {answer}"
+  
+  speak_to_human:
+    - "I understand you'd like to speak with one of our financial advisors. I'll arrange for someone to call you back. May I have your preferred contact time?"
+    - "I'd be happy to connect you with one of our investment specialists. I'll transfer your call to an available advisor now."
+  
+  fallback:
+    - "I apologize, but I don't have specific information about that. Would you like to know about our multi-yield series or our leadership team instead?"
+    - "I'm sorry, I couldn't find relevant information. Our fund managers have extensive experience in the industry. Would you like to know more about them?"
+
+# Specific product details
+products:
+  multi_yield_series_1:
+    name: "Multi-Yield Series 1"
+    type: "Category 2 Fund"
+    maturity: "4 years 11 months"
+    target_raise: "1000 crore"
+    minimum_investment: "1 crore"
+    expected_gross_yield: "16%"
+    expected_net_yield: "13-14%"
+    investment_schedule: "25% in March/April 2025, remainder in June, September, and December 2025"
+  
+# Call transfer settings
+transfers:
+  default_agent: "+918000XXXXXX"  # Replace with actual agent number
+  escalation_agent: "+918001XXXXXX"  # Replace with senior agent number
+  
+# Custom variables for this use case
+custom_variables:
+  founder: "Maneesh Dangi"
+  cio: "R. Gopi Krishna"
+  company: "mOSAIC Investment"

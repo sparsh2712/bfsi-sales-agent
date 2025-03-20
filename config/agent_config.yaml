@@ -1,0 +1,57 @@
+# Main Agent Configuration
+
+# Agent Settings
+agent:
+  name: "BFSI Sales Assistant"
+  description: "AI Sales Agent for Banking, Financial Services, and Insurance"
+  interaction_timeout: 300  # Seconds until session times out after inactivity
+  max_history_length: 20    # Maximum conversation turns to keep in history
+  default_use_case: "mutual_funds"
+
+# Voice Settings
+voice:
+  elevenlabs:
+    voice_id: "21m00Tcm4TlvDq8ikWAM"  # Default voice ID (can be customized)
+    stability: 0.6
+    similarity_boost: 0.75
+    style: 0.3
+    use_speaker_boost: true
+  twilio:
+    webhook_base_url: "https://your-webhook-url.com"  # Update with your public URL
+    port: 5000
+    host: "0.0.0.0"
+    debug: false
+
+# Knowledge Base Settings
+knowledge_base:
+  docs_dir: "data/documents"
+  index_dir: "data/indices"
+  cache_results: true
+  cache_expiry: 3600  # Seconds
+
+# Tools Configuration
+tools:
+  calculator:
+    enabled: true
+    module: "src.tools.tool_manager"
+    class_name: "CalculatorTool"
+  calendar:
+    enabled: false
+    module: "src.tools.calendar_tool"
+    class_name: "CalendarTool"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_to_file: true
+  log_file: "logs/bfsi_agent.log"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Service Integration
+services:
+  crm:
+    enabled: false
+    api_url: "https://your-crm-api.com"
+  database:
+    enabled: false
+    connection_string: "sqlite:///data/agent_data.db"

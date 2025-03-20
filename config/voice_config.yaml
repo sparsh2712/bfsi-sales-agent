@@ -1,0 +1,66 @@
+# Voice Configuration
+
+# ElevenLabs TTS Configuration
+elevenlabs:
+  voice_id: "21m00Tcm4TlvDq8ikWAM"  # Default voice ID
+  model_id: "eleven_multilingual_v2"
+  stability: 0.6
+  similarity_boost: 0.75
+  style: 0.3
+  use_speaker_boost: true
+  audio_format: "mp3"
+  output_dir: "data/audio_cache"
+  
+  # South Indian Female Voice settings
+  south_indian_female:
+    voice_id: "custom_voice_id"  # Replace with actual voice ID once created
+    stability: 0.7
+    similarity_boost: 0.8
+    style: 0.4
+
+# Twilio Configuration
+twilio:
+  webhook_base_url: "https://your-webhook-url.com"  # Update with your public URL
+  port: 5000
+  host: "0.0.0.0"
+  debug: false
+  timeout: 30
+  retry_attempts: 3
+  voice_name: "alice"  # Fallback voice if ElevenLabs is unavailable
+  
+  # Outbound Call Settings
+  outbound:
+    status_callback: "https://your-webhook-url.com/status"
+    send_digits: ""
+    record: false
+    trim: "trim-silence"
+    timeout: 60
+
+# Speech Recognition Settings
+speech_recognition:
+  language: "en-IN"  # Indian English
+  speech_timeout: "auto"
+  speech_model: "phone_call"
+  profanity_filter: true
+  enhanced: true
+  
+  # Supported languages (can be enabled as needed)
+  languages:
+    - code: "en-IN"
+      name: "English (India)"
+      enabled: true
+    - code: "hi-IN"
+      name: "Hindi (India)"
+      enabled: true
+    - code: "ta-IN"
+      name: "Tamil (India)"
+      enabled: false
+    - code: "te-IN"
+      name: "Telugu (India)"
+      enabled: false
+    - code: "kn-IN"
+      name: "Kannada (India)"
+      enabled: false
+    - code: "ml-IN"
+      name: "Malayalam (India)"
+      enabled: false

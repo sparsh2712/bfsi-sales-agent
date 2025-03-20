@@ -1,0 +1,22 @@
+# Core dependencies
+flask==2.3.3
+pyyaml==6.0.1
+python-dotenv==1.0.0
+requests==2.31.0
+twilio==8.5.0
+PyPDF2==3.0.1
+loguru==0.7.0
+
+# Elevenlabs TTS integration
+elevenlabs==0.2.26
+
+# Utils and tools
+python-dateutil==2.8.2
+tenacity==8.2.3
+PyJWT==2.8.0
+
+# OPTIONAL: For advanced features (uncomment as needed)
+# langchain==0.0.257  # For more advanced prompt handling
+# sqlalchemy==2.0.21  # For database integration
+# pydantic==2.4.2    # For data validation
+# boto3==1.28.45     # For AWS integration
