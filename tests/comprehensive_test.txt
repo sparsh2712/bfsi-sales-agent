@@ -1,0 +1,74 @@
+# Comprehensive test script for the BFSI Sales Agent
+# Tests various capabilities including knowledge retrieval and LLM reasoning
+
+# Basic greeting and identification
+hello
+who are you?
+what can you help me with?
+
+# Product information
+can you tell me about your mutual funds?
+what is the Multi-Yield Series 1?
+why do you call it mOSAIC?
+what type of fund is Multi-Yield Series 1?
+what is the maturity period of your fund?
+
+# Performance and returns
+what kind of returns can I expect?
+how much will I net-earn in your fund?
+is 13-14% an adequate return for this kind of portfolio?
+how is this performance after tax?
+can a credit fund be brought close to FDs or FMPs?
+
+# Risk assessment
+how risky is this investment?
+can I lose my money in this fund?
+what kind of firms will you invest in?
+how will my fund be taxed?
+
+# Eligibility and process
+who can invest in your funds?
+what's the minimum investment amount?
+is there liquidity in this fund?
+when do I need to put in the money?
+how much do I need to invest initially?
+
+# Leadership and differentiation
+who is on the leadership team?
+tell me about Maneesh Dangi
+how is your strategy different from others?
+who founded mOSAIC Investment?
+
+# Complex queries
+how do you select companies to invest in?
+how do you diversify your fund across sectors?
+why is diversification so important in your portfolio?
+how can one make 14% from assets when banks are ready to lend at 9% for home loans?
+
+# Multi-turn conversation to test context maintenance
+what is performing credit?
+what else can you tell me about it?
+is that a safe investment?
+
+# Testing knowledge of Indian context
+are you familiar with Indian financial regulations?
+do you support investments for NRIs?
+how does this compare to other Indian mutual funds?
+
+# Fallback handling
+what's your opinion on cryptocurrency?
+how is the weather today?
+can you help me with my tax filing?
+
+# Testing reasoning capabilities
+if I invest 2 crores, how much can I expect in returns annually based on your projected yield?
+what's better for a conservative investor - your fund or a bank FD?
+explain the advantages of your fund compared to direct equity investments
+
+# Human transfer test
+I'd like to speak to a human representative
+can I talk to someone about investing more than 5 crores?
+
+# End conversation
+thank you for your help
+goodbye

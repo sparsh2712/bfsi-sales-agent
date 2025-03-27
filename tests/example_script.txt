@@ -1,0 +1,16 @@
+# Example script for testing the BFSI Sales Agent
+# Lines starting with # are comments and will be skipped
+# Each line represents a user input
+
+hello
+what is mOSAIC investment?
+tell me about the multi-yield series
+what is the expected yield?
+is there any risk involved?
+what is the minimum investment amount?
+who is on the leadership team?
+how is this fund different from others?
+is there liquidity in this fund?
+how will my fund be taxed?
+can I speak to a human advisor?
+thank you

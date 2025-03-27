@@ -10,10 +10,17 @@ loguru==0.7.0
 # Elevenlabs TTS integration
 elevenlabs==0.2.26
 
+# NLP and LLM integration
+sentence-transformers==2.2.2  # For semantic search embeddings
+scikit-learn==1.3.0  # For cosine similarity
+numpy==1.24.3  # For numerical operations
+openai==1.3.5  # For LLM integration
+
 # Utils and tools
 python-dateutil==2.8.2
-tenacity==8.2.3
+tenacity==8.2.3  # For retry logic
 PyJWT==2.8.0
+pickle5==0.0.12  # For Python 3.8 compatibility with pickle
 
 # OPTIONAL: For advanced features (uncomment as needed)
 # langchain==0.0.257  # For more advanced prompt handling
